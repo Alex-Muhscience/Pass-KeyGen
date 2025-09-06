@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import '../models/account_model.dart';
+<<<<<<< HEAD
+=======
+import '../models/password_model.dart';
+>>>>>>> 5e93ef0 (Update Android build configuration and dependencies)
 
 class AccountForm extends StatefulWidget {
   final AccountModel? initialAccountModel;
@@ -16,10 +20,17 @@ class AccountForm extends StatefulWidget {
   });
 
   @override
+<<<<<<< HEAD
   _AccountFormState createState() => _AccountFormState();
 }
 
 class _AccountFormState extends State<AccountForm> {
+=======
+  AccountFormState createState() => AccountFormState();
+}
+
+class AccountFormState extends State<AccountForm> {
+>>>>>>> 5e93ef0 (Update Android build configuration and dependencies)
   final _formKey = GlobalKey<FormState>();
   late TextEditingController _accountNameController;
   late TextEditingController _emailController;
@@ -60,7 +71,13 @@ class _AccountFormState extends State<AccountForm> {
             accountName: _accountNameController.text,
             email: _emailController.text,
             password: _passwordController.text,
+<<<<<<< HEAD
             passwords: widget.passwords.map((password) => PasswordModel(password: password, name: 'DefaultName')).toList(), // Convert List<String> to List<PasswordModel> with a default name
+=======
+            website: '',
+            username: _emailController.text,
+            passwords: widget.passwords.map((password) => PasswordModel(name: 'DefaultName', password: password)).toList(), // Convert List<String> to List<PasswordModel> with a default name
+>>>>>>> 5e93ef0 (Update Android build configuration and dependencies)
           );
       widget.onSave(updatedAccountModel);
     }

@@ -1,0 +1,1282 @@
+{
+  "@@locale": "en",
+  "appName": "SecureVault",
+  "@appName": {
+    "description": "The name of the application"
+  },
+  
+  "login": "Login",
+  "@login": {
+    "description": "Login button text"
+  },
+  
+  "loginTitle": "Welcome Back",
+  "@loginTitle": {
+    "description": "Login page title"
+  },
+  
+  "loginSubtitle": "Sign in to access your secure vault",
+  "@loginSubtitle": {
+    "description": "Login page subtitle"
+  },
+  
+  "username": "Username",
+  "@username": {
+    "description": "Username field label"
+  },
+  
+  "password": "Password",
+  "@password": {
+    "description": "Password field label"
+  },
+  
+  "email": "Email",
+  "@email": {
+    "description": "Email field label"
+  },
+  
+  "signUp": "Sign Up",
+  "@signUp": {
+    "description": "Sign up button text"
+  },
+  
+  "signUpTitle": "Create Account",
+  "@signUpTitle": {
+    "description": "Sign up page title"
+  },
+  
+  "signUpSubtitle": "Join SecureVault to protect your passwords",
+  "@signUpSubtitle": {
+    "description": "Sign up page subtitle"
+  },
+  
+  "forgotPassword": "Forgot Password?",
+  "@forgotPassword": {
+    "description": "Forgot password link text"
+  },
+  
+  "biometricLogin": "Use Biometric",
+  "@biometricLogin": {
+    "description": "Biometric login button text"
+  },
+  
+  "home": "Home",
+  "@home": {
+    "description": "Home page title"
+  },
+  
+  "accounts": "Accounts",
+  "@accounts": {
+    "description": "Accounts section title"
+  },
+  
+  "addAccount": "Add Account",
+  "@addAccount": {
+    "description": "Add account button text"
+  },
+  
+  "accountName": "Account Name",
+  "@accountName": {
+    "description": "Account name field label"
+  },
+  
+  "website": "Website",
+  "@website": {
+    "description": "Website field label"
+  },
+  
+  "notes": "Notes",
+  "@notes": {
+    "description": "Notes field label"
+  },
+  
+  "category": "Category",
+  "@category": {
+    "description": "Category field label"
+  },
+  
+  "save": "Save",
+  "@save": {
+    "description": "Save button text"
+  },
+  
+  "cancel": "Cancel",
+  "@cancel": {
+    "description": "Cancel button text"
+  },
+  
+  "delete": "Delete",
+  "@delete": {
+    "description": "Delete button text"
+  },
+  
+  "edit": "Edit",
+  "@edit": {
+    "description": "Edit button text"
+  },
+  
+  "copy": "Copy",
+  "@copy": {
+    "description": "Copy button text"
+  },
+  
+  "generate": "Generate",
+  "@generate": {
+    "description": "Generate button text"
+  },
+  
+  "settings": "Settings",
+  "@settings": {
+    "description": "Settings page title"
+  },
+  
+  "security": "Security",
+  "@security": {
+    "description": "Security section title"
+  },
+  
+  "securityDashboard": "Security Dashboard",
+  "@securityDashboard": {
+    "description": "Security dashboard title"
+  },
+  
+  "securityDashboardSubtitle": "View security audit and recommendations",
+  "@securityDashboardSubtitle": {
+    "description": "Security dashboard subtitle"
+  },
+  
+  "securityScore": "Security Score",
+  "@securityScore": {
+    "description": "Security score label"
+  },
+  
+  "excellentSecurity": "Excellent security",
+  "@excellentSecurity": {
+    "description": "Excellent security score description"
+  },
+  
+  "goodSecurity": "Good security",
+  "@goodSecurity": {
+    "description": "Good security score description"
+  },
+  
+  "fairSecurity": "Fair security",
+  "@fairSecurity": {
+    "description": "Fair security score description"
+  },
+  
+  "poorSecurity": "Poor security",
+  "@poorSecurity": {
+    "description": "Poor security score description"
+  },
+  
+  "criticalSecurityIssues": "Critical security issues",
+  "@criticalSecurityIssues": {
+    "description": "Critical security issues description"
+  },
+  
+  "totalAccounts": "Total Accounts",
+  "@totalAccounts": {
+    "description": "Total accounts label"
+  },
+  
+  "issuesFound": "Issues Found",
+  "@issuesFound": {
+    "description": "Issues found label"
+  },
+  
+  "strongPasswords": "Strong Passwords",
+  "@strongPasswords": {
+    "description": "Strong passwords label"
+  },
+  
+  "riskBreakdown": "Risk Breakdown",
+  "@riskBreakdown": {
+    "description": "Risk breakdown title"
+  },
+  
+  "critical": "Critical",
+  "@critical": {
+    "description": "Critical risk level"
+  },
+  
+  "high": "High",
+  "@high": {
+    "description": "High risk level"
+  },
+  
+  "medium": "Medium",
+  "@medium": {
+    "description": "Medium risk level"
+  },
+  
+  "low": "Low",
+  "@low": {
+    "description": "Low risk level"
+  },
+  
+  "securityIssues": "Security Issues",
+  "@securityIssues": {
+    "description": "Security issues title"
+  },
+  
+  "allClear": "All Clear!",
+  "@allClear": {
+    "description": "All clear message"
+  },
+  
+  "noSecurityIssues": "No security issues detected",
+  "@noSecurityIssues": {
+    "description": "No security issues message"
+  },
+  
+  "viewAllIssues": "View All {count} Issues",
+  "@viewAllIssues": {
+    "description": "View all issues button text",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "passwordGenerator": "Password Generator",
+  "@passwordGenerator": {
+    "description": "Password generator title"
+  },
+  
+  "passwordGeneratorSubtitle": "Generate secure passwords",
+  "@passwordGeneratorSubtitle": {
+    "description": "Password generator subtitle"
+  },
+  
+  "generatedPassword": "Generated Password",
+  "@generatedPassword": {
+    "description": "Generated password label"
+  },
+  
+  "generatedPassphrase": "Generated Passphrase",
+  "@generatedPassphrase": {
+    "description": "Generated passphrase label"
+  },
+  
+  "passphrase": "Passphrase",
+  "@passphrase": {
+    "description": "Passphrase option"
+  },
+  
+  "passwordAnalysis": "Password Analysis",
+  "@passwordAnalysis": {
+    "description": "Password analysis title"
+  },
+  
+  "strength": "Strength",
+  "@strength": {
+    "description": "Password strength label"
+  },
+  
+  "score": "Score",
+  "@score": {
+    "description": "Password score label"
+  },
+  
+  "entropy": "Entropy",
+  "@entropy": {
+    "description": "Password entropy label"
+  },
+  
+  "suggestions": "Suggestions",
+  "@suggestions": {
+    "description": "Password suggestions title"
+  },
+  
+  "alternativeOptions": "Alternative Options",
+  "@alternativeOptions": {
+    "description": "Alternative password options title"
+  },
+  
+  "passwordSettings": "Password Settings",
+  "@passwordSettings": {
+    "description": "Password settings title"
+  },
+  
+  "passphraseSettings": "Passphrase Settings",
+  "@passphraseSettings": {
+    "description": "Passphrase settings title"
+  },
+  
+  "length": "Length: {length}",
+  "@length": {
+    "description": "Password length label",
+    "placeholders": {
+      "length": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "wordCount": "Word Count: {count}",
+  "@wordCount": {
+    "description": "Word count label",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "separator": "Separator",
+  "@separator": {
+    "description": "Separator label"
+  },
+  
+  "space": "Space",
+  "@space": {
+    "description": "Space separator option"
+  },
+  
+  "includeUppercase": "Uppercase (A-Z)",
+  "@includeUppercase": {
+    "description": "Include uppercase option"
+  },
+  
+  "includeLowercase": "Lowercase (a-z)",
+  "@includeLowercase": {
+    "description": "Include lowercase option"
+  },
+  
+  "includeNumbers": "Numbers (0-9)",
+  "@includeNumbers": {
+    "description": "Include numbers option"
+  },
+  
+  "includeSymbols": "Symbols (!@#$)",
+  "@includeSymbols": {
+    "description": "Include symbols option"
+  },
+  
+  "includeNumbersInPassphrase": "Include Numbers",
+  "@includeNumbersInPassphrase": {
+    "description": "Include numbers in passphrase option"
+  },
+  
+  "capitalizeWords": "Capitalize Words",
+  "@capitalizeWords": {
+    "description": "Capitalize words option"
+  },
+  
+  "advancedOptions": "Advanced Options",
+  "@advancedOptions": {
+    "description": "Advanced options title"
+  },
+  
+  "excludeSimilar": "Exclude Similar (il1Lo0O)",
+  "@excludeSimilar": {
+    "description": "Exclude similar characters option"
+  },
+  
+  "excludeAmbiguous": "Exclude Ambiguous Characters",
+  "@excludeAmbiguous": {
+    "description": "Exclude ambiguous characters option"
+  },
+  
+  "twoFactorAuthentication": "Two-Factor Authentication",
+  "@twoFactorAuthentication": {
+    "description": "Two-factor authentication title"
+  },
+  
+  "twoFactorAuthSubtitle": "Add an extra layer of security",
+  "@twoFactorAuthSubtitle": {
+    "description": "Two-factor authentication subtitle"
+  },
+  
+  "secureYourAccount": "Secure Your Account",
+  "@secureYourAccount": {
+    "description": "Secure your account title"
+  },
+  
+  "twoFactorDescription": "Two-factor authentication adds an extra layer of security to your account by requiring a verification code from your phone.",
+  "@twoFactorDescription": {
+    "description": "Two-factor authentication description"
+  },
+  
+  "enhancedSecurity": "Enhanced Security",
+  "@enhancedSecurity": {
+    "description": "Enhanced security feature"
+  },
+  
+  "enhancedSecurityDesc": "Protect against unauthorized access",
+  "@enhancedSecurityDesc": {
+    "description": "Enhanced security description"
+  },
+  
+  "mobileAppSupport": "Mobile App Support",
+  "@mobileAppSupport": {
+    "description": "Mobile app support feature"
+  },
+  
+  "mobileAppSupportDesc": "Works with Google Authenticator, Authy, and more",
+  "@mobileAppSupportDesc": {
+    "description": "Mobile app support description"
+  },
+  
+  "backupCodes": "Backup Codes",
+  "@backupCodes": {
+    "description": "Backup codes feature"
+  },
+  
+  "backupCodesDesc": "Recovery codes in case you lose your device",
+  "@backupCodesDesc": {
+    "description": "Backup codes description"
+  },
+  
+  "enable2FA": "Enable 2FA",
+  "@enable2FA": {
+    "description": "Enable 2FA button text"
+  },
+  
+  "scanQRCode": "Scan QR Code",
+  "@scanQRCode": {
+    "description": "Scan QR code title"
+  },
+  
+  "scanQRCodeDesc": "Use your authenticator app to scan this QR code",
+  "@scanQRCodeDesc": {
+    "description": "Scan QR code description"
+  },
+  
+  "manualEntryCode": "Manual Entry Code",
+  "@manualEntryCode": {
+    "description": "Manual entry code title"
+  },
+  
+  "verificationCode": "Verification Code",
+  "@verificationCode": {
+    "description": "Verification code field label"
+  },
+  
+  "enterSixDigitCode": "Enter 6-digit code",
+  "@enterSixDigitCode": {
+    "description": "Enter 6-digit code hint"
+  },
+  
+  "verifyAndEnable": "Verify & Enable",
+  "@verifyAndEnable": {
+    "description": "Verify and enable button text"
+  },
+  
+  "twoFAEnabledSuccessfully": "2FA Enabled Successfully!",
+  "@twoFAEnabledSuccessfully": {
+    "description": "2FA enabled successfully message"
+  },
+  
+  "saveBackupCodes": "Save these backup codes in a secure location. You can use them to access your account if you lose your authenticator device.",
+  "@saveBackupCodes": {
+    "description": "Save backup codes instruction"
+  },
+  
+  "done": "Done",
+  "@done": {
+    "description": "Done button text"
+  },
+  
+  "twoFAEnabled": "2FA Enabled",
+  "@twoFAEnabled": {
+    "description": "2FA enabled status"
+  },
+  
+  "accountProtected": "Your account is protected with two-factor authentication",
+  "@accountProtected": {
+    "description": "Account protected message"
+  },
+  
+  "regenerate": "Regenerate",
+  "@regenerate": {
+    "description": "Regenerate button text"
+  },
+  
+  "backupCodesRemaining": "You have {count} backup codes remaining",
+  "@backupCodesRemaining": {
+    "description": "Backup codes remaining message",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "viewCodes": "View Codes",
+  "@viewCodes": {
+    "description": "View codes button text"
+  },
+  
+  "regenerateBackupCodes": "Regenerate Backup Codes",
+  "@regenerateBackupCodes": {
+    "description": "Regenerate backup codes option"
+  },
+  
+  "generateNewBackupCodes": "Generate new backup codes",
+  "@generateNewBackupCodes": {
+    "description": "Generate new backup codes description"
+  },
+  
+  "reset2FA": "Reset 2FA",
+  "@reset2FA": {
+    "description": "Reset 2FA option"
+  },
+  
+  "generateNewSecretKey": "Generate new secret key",
+  "@generateNewSecretKey": {
+    "description": "Generate new secret key description"
+  },
+  
+  "disable2FA": "Disable 2FA",
+  "@disable2FA": {
+    "description": "Disable 2FA option"
+  },
+  
+  "turnOff2FA": "Turn off two-factor authentication",
+  "@turnOff2FA": {
+    "description": "Turn off 2FA description"
+  },
+  
+  "copyAllCodes": "Copy All Codes",
+  "@copyAllCodes": {
+    "description": "Copy all codes button text"
+  },
+  
+  "importExport": "Import & Export",
+  "@importExport": {
+    "description": "Import & Export title"
+  },
+  
+  "import": "Import",
+  "@import": {
+    "description": "Import tab"
+  },
+  
+  "export": "Export",
+  "@export": {
+    "description": "Export tab"
+  },
+  
+  "importPasswords": "Import Passwords",
+  "@importPasswords": {
+    "description": "Import passwords title"
+  },
+  
+  "importPasswordsDesc": "Import your passwords from other password managers",
+  "@importPasswordsDesc": {
+    "description": "Import passwords description"
+  },
+  
+  "exportPasswords": "Export Passwords",
+  "@exportPasswords": {
+    "description": "Export passwords title"
+  },
+  
+  "exportPasswordsDesc": "Create a backup or migrate to another password manager",
+  "@exportPasswordsDesc": {
+    "description": "Export passwords description"
+  },
+  
+  "exportDataWarning": "Make sure to export your data from the other password manager first",
+  "@exportDataWarning": {
+    "description": "Export data warning"
+  },
+  
+  "sensitiveDataWarning": "Exported files contain sensitive data. Store them securely and delete after use.",
+  "@sensitiveDataWarning": {
+    "description": "Sensitive data warning"
+  },
+  
+  "chooseImportSource": "Choose Import Source",
+  "@chooseImportSource": {
+    "description": "Choose import source title"
+  },
+  
+  "chooseExportFormat": "Choose Export Format",
+  "@chooseExportFormat": {
+    "description": "Choose export format title"
+  },
+  
+  "chrome": "Chrome",
+  "@chrome": {
+    "description": "Chrome browser"
+  },
+  
+  "chromeImportDesc": "Import from Chrome password export (CSV)",
+  "@chromeImportDesc": {
+    "description": "Chrome import description"
+  },
+  
+  "firefox": "Firefox",
+  "@firefox": {
+    "description": "Firefox browser"
+  },
+  
+  "firefoxImportDesc": "Import from Firefox password export (CSV)",
+  "@firefoxImportDesc": {
+    "description": "Firefox import description"
+  },
+  
+  "safari": "Safari",
+  "@safari": {
+    "description": "Safari browser"
+  },
+  
+  "safariImportDesc": "Import from Safari password export (CSV)",
+  "@safariImportDesc": {
+    "description": "Safari import description"
+  },
+  
+  "bitwarden": "Bitwarden",
+  "@bitwarden": {
+    "description": "Bitwarden password manager"
+  },
+  
+  "bitwardenImportDesc": "Import from Bitwarden vault export (JSON)",
+  "@bitwardenImportDesc": {
+    "description": "Bitwarden import description"
+  },
+  
+  "lastpass": "LastPass",
+  "@lastpass": {
+    "description": "LastPass password manager"
+  },
+  
+  "lastpassImportDesc": "Import from LastPass vault export (CSV)",
+  "@lastpassImportDesc": {
+    "description": "LastPass import description"
+  },
+  
+  "onepassword": "1Password",
+  "@onepassword": {
+    "description": "1Password password manager"
+  },
+  
+  "onepasswordImportDesc": "Import from 1Password export (CSV)",
+  "@onepasswordImportDesc": {
+    "description": "1Password import description"
+  },
+  
+  "genericCSV": "Generic CSV",
+  "@genericCSV": {
+    "description": "Generic CSV format"
+  },
+  
+  "genericCSVDesc": "Import from any CSV file",
+  "@genericCSVDesc": {
+    "description": "Generic CSV description"
+  },
+  
+  "jsonFile": "JSON File",
+  "@jsonFile": {
+    "description": "JSON file format"
+  },
+  
+  "jsonFileDesc": "Import from JSON file",
+  "@jsonFileDesc": {
+    "description": "JSON file description"
+  },
+  
+  "encryptedExport": "Encrypted Export",
+  "@encryptedExport": {
+    "description": "Encrypted export format"
+  },
+  
+  "encryptedExportDesc": "Secure export with password protection (Recommended)",
+  "@encryptedExportDesc": {
+    "description": "Encrypted export description"
+  },
+  
+  "csvExport": "CSV Export",
+  "@csvExport": {
+    "description": "CSV export format"
+  },
+  
+  "csvExportDesc": "Compatible with most password managers",
+  "@csvExportDesc": {
+    "description": "CSV export description"
+  },
+  
+  "jsonExport": "JSON Export",
+  "@jsonExport": {
+    "description": "JSON export format"
+  },
+  
+  "jsonExportDesc": "Structured data format with metadata",
+  "@jsonExportDesc": {
+    "description": "JSON export description"
+  },
+  
+  "secure": "SECURE",
+  "@secure": {
+    "description": "Secure label"
+  },
+  
+  "privacy": "Privacy",
+  "@privacy": {
+    "description": "Privacy section title"
+  },
+  
+  "cloudSync": "Cloud Sync",
+  "@cloudSync": {
+    "description": "Cloud sync option"
+  },
+  
+  "cloudSyncDesc": "Sync data across devices",
+  "@cloudSyncDesc": {
+    "description": "Cloud sync description"
+  },
+  
+  "privacyPolicy": "Privacy Policy",
+  "@privacyPolicy": {
+    "description": "Privacy policy option"
+  },
+  
+  "privacyPolicyDesc": "View our privacy policy",
+  "@privacyPolicyDesc": {
+    "description": "Privacy policy description"
+  },
+  
+  "dataUsage": "Data Usage",
+  "@dataUsage": {
+    "description": "Data usage option"
+  },
+  
+  "dataUsageDesc": "See how your data is used",
+  "@dataUsageDesc": {
+    "description": "Data usage description"
+  },
+  
+  "appearance": "Appearance",
+  "@appearance": {
+    "description": "Appearance section title"
+  },
+  
+  "theme": "Theme",
+  "@theme": {
+    "description": "Theme option"
+  },
+  
+  "light": "Light",
+  "@light": {
+    "description": "Light theme"
+  },
+  
+  "dark": "Dark",
+  "@dark": {
+    "description": "Dark theme"
+  },
+  
+  "system": "System",
+  "@system": {
+    "description": "System theme"
+  },
+  
+  "compactView": "Compact View",
+  "@compactView": {
+    "description": "Compact view option"
+  },
+  
+  "compactViewDesc": "Show more items on screen",
+  "@compactViewDesc": {
+    "description": "Compact view description"
+  },
+  
+  "showPasswords": "Show Passwords",
+  "@showPasswords": {
+    "description": "Show passwords option"
+  },
+  
+  "showPasswordsDesc": "Display passwords by default",
+  "@showPasswordsDesc": {
+    "description": "Show passwords description"
+  },
+  
+  "dataManagement": "Data Management",
+  "@dataManagement": {
+    "description": "Data management section title"
+  },
+  
+  "importExportDesc": "Import from other password managers",
+  "@importExportDesc": {
+    "description": "Import & Export description"
+  },
+  
+  "backupRestore": "Backup & Restore",
+  "@backupRestore": {
+    "description": "Backup & Restore option"
+  },
+  
+  "backupRestoreDesc": "Create and restore backups",
+  "@backupRestoreDesc": {
+    "description": "Backup & Restore description"
+  },
+  
+  "clearCache": "Clear Cache",
+  "@clearCache": {
+    "description": "Clear cache option"
+  },
+  
+  "clearCacheDesc": "Free up storage space",
+  "@clearCacheDesc": {
+    "description": "Clear cache description"
+  },
+  
+  "resetApp": "Reset App",
+  "@resetApp": {
+    "description": "Reset app option"
+  },
+  
+  "resetAppDesc": "Delete all data and reset",
+  "@resetAppDesc": {
+    "description": "Reset app description"
+  },
+  
+  "about": "About",
+  "@about": {
+    "description": "About section title"
+  },
+  
+  "version": "Version",
+  "@version": {
+    "description": "Version label"
+  },
+  
+  "helpSupport": "Help & Support",
+  "@helpSupport": {
+    "description": "Help & Support option"
+  },
+  
+  "helpSupportDesc": "Get help and contact support",
+  "@helpSupportDesc": {
+    "description": "Help & Support description"
+  },
+  
+  "rateApp": "Rate App",
+  "@rateApp": {
+    "description": "Rate app option"
+  },
+  
+  "rateAppDesc": "Rate SecureVault on the app store",
+  "@rateAppDesc": {
+    "description": "Rate app description"
+  },
+  
+  "termsOfService": "Terms of Service",
+  "@termsOfService": {
+    "description": "Terms of service option"
+  },
+  
+  "termsOfServiceDesc": "View terms and conditions",
+  "@termsOfServiceDesc": {
+    "description": "Terms of service description"
+  },
+  
+  "biometricAuthentication": "Biometric Authentication",
+  "@biometricAuthentication": {
+    "description": "Biometric authentication option"
+  },
+  
+  "biometricAuthDesc": "Use fingerprint or face unlock",
+  "@biometricAuthDesc": {
+    "description": "Biometric authentication description"
+  },
+  
+  "autoLock": "Auto-Lock",
+  "@autoLock": {
+    "description": "Auto-lock option"
+  },
+  
+  "autoLockDesc": "Lock app when inactive",
+  "@autoLockDesc": {
+    "description": "Auto-lock description"
+  },
+  
+  "autoLockTimer": "Auto-Lock Timer",
+  "@autoLockTimer": {
+    "description": "Auto-lock timer option"
+  },
+  
+  "lockAfterMinutes": "Lock after {minutes} minutes",
+  "@lockAfterMinutes": {
+    "description": "Lock after minutes description",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "language": "Language",
+  "@language": {
+    "description": "Language option"
+  },
+  
+  "selectLanguage": "Select Language",
+  "@selectLanguage": {
+    "description": "Select language title"
+  },
+  
+  "english": "English",
+  "@english": {
+    "description": "English language"
+  },
+  
+  "spanish": "Español",
+  "@spanish": {
+    "description": "Spanish language"
+  },
+  
+  "french": "Français",
+  "@french": {
+    "description": "French language"
+  },
+  
+  "german": "Deutsch",
+  "@german": {
+    "description": "German language"
+  },
+  
+  "italian": "Italiano",
+  "@italian": {
+    "description": "Italian language"
+  },
+  
+  "portuguese": "Português",
+  "@portuguese": {
+    "description": "Portuguese language"
+  },
+  
+  "russian": "Русский",
+  "@russian": {
+    "description": "Russian language"
+  },
+  
+  "chinese": "中文",
+  "@chinese": {
+    "description": "Chinese language"
+  },
+  
+  "japanese": "日本語",
+  "@japanese": {
+    "description": "Japanese language"
+  },
+  
+  "korean": "한국어",
+  "@korean": {
+    "description": "Korean language"
+  },
+  
+  "arabic": "العربية",
+  "@arabic": {
+    "description": "Arabic language"
+  },
+  
+  "hindi": "हिन्दी",
+  "@hindi": {
+    "description": "Hindi language"
+  },
+  
+  "error": "Error",
+  "@error": {
+    "description": "Error message title"
+  },
+  
+  "success": "Success",
+  "@success": {
+    "description": "Success message title"
+  },
+  
+  "warning": "Warning",
+  "@warning": {
+    "description": "Warning message title"
+  },
+  
+  "info": "Info",
+  "@info": {
+    "description": "Info message title"
+  },
+  
+  "confirm": "Confirm",
+  "@confirm": {
+    "description": "Confirm button text"
+  },
+  
+  "yes": "Yes",
+  "@yes": {
+    "description": "Yes button text"
+  },
+  
+  "no": "No",
+  "@no": {
+    "description": "No button text"
+  },
+  
+  "ok": "OK",
+  "@ok": {
+    "description": "OK button text"
+  },
+  
+  "close": "Close",
+  "@close": {
+    "description": "Close button text"
+  },
+  
+  "loading": "Loading...",
+  "@loading": {
+    "description": "Loading message"
+  },
+  
+  "noData": "No data available",
+  "@noData": {
+    "description": "No data message"
+  },
+  
+  "tryAgain": "Try Again",
+  "@tryAgain": {
+    "description": "Try again button text"
+  },
+  
+  "refresh": "Refresh",
+  "@refresh": {
+    "description": "Refresh button text"
+  },
+  
+  "search": "Search",
+  "@search": {
+    "description": "Search placeholder text"
+  },
+  
+  "searchAccounts": "Search accounts...",
+  "@searchAccounts": {
+    "description": "Search accounts placeholder"
+  },
+  
+  "noAccountsFound": "No accounts found",
+  "@noAccountsFound": {
+    "description": "No accounts found message"
+  },
+  
+  "addYourFirstAccount": "Add your first account to get started",
+  "@addYourFirstAccount": {
+    "description": "Add first account message"
+  },
+  
+  "copied": "Copied",
+  "@copied": {
+    "description": "Copied to clipboard message"
+  },
+  
+  "copiedToClipboard": "Copied to clipboard",
+  "@copiedToClipboard": {
+    "description": "Copied to clipboard full message"
+  },
+
+  "developer": "Developer",
+  "@developer": {
+    "description": "Developer label"
+  },
+
+  "familySharing": "Family Sharing",
+  "@familySharing": {
+    "description": "Family sharing page title"
+  },
+
+  "overview": "Overview",
+  "@overview": {
+    "description": "Overview tab title"
+  },
+
+  "members": "Members",
+  "@members": {
+    "description": "Members tab title"
+  },
+
+  "shared": "Shared",
+  "@shared": {
+    "description": "Shared tab title"
+  },
+
+  "sharePassword": "Share Password",
+  "@sharePassword": {
+    "description": "Share password button text"
+  },
+
+  "createYourFamilyVault": "Create Your Family Vault",
+  "@createYourFamilyVault": {
+    "description": "Create family vault title"
+  },
+
+  "sharePasswordsSecurely": "Share passwords securely with your family members. Create a family vault to get started.",
+  "@sharePasswordsSecurely": {
+    "description": "Family vault description"
+  },
+
+  "createFamilyVault": "Create Family Vault",
+  "@createFamilyVault": {
+    "description": "Create family vault button text"
+  },
+
+  "recentActivity": "Recent Activity",
+  "@recentActivity": {
+    "description": "Recent activity section title"
+  },
+
+  "sharedItems": "Shared Items",
+  "@sharedItems": {
+    "description": "Shared items label"
+  },
+
+  "yourName": "Your Name",
+  "@yourName": {
+    "description": "Your name field label"
+  },
+
+  "enterYourFullName": "Enter your full name",
+  "@enterYourFullName": {
+    "description": "Enter full name hint"
+  },
+
+  "yourEmail": "Your Email",
+  "@yourEmail": {
+    "description": "Your email field label"
+  },
+
+  "enterYourEmailAddress": "Enter your email address",
+  "@enterYourEmailAddress": {
+    "description": "Enter email address hint"
+  },
+
+  "create": "Create",
+  "@create": {
+    "description": "Create button text"
+  },
+
+  "familyVaultCreatedSuccessfully": "Family vault created successfully!",
+  "@familyVaultCreatedSuccessfully": {
+    "description": "Family vault created success message"
+  },
+
+  "failedToCreateFamilyVault": "Failed to create family vault: {error}",
+  "@failedToCreateFamilyVault": {
+    "description": "Failed to create family vault error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+
+  "inviteFamilyMember": "Invite Family Member",
+  "@inviteFamilyMember": {
+    "description": "Invite family member dialog title"
+  },
+
+  "generateInviteCode": "Generate an invite code to share with your family member.",
+  "@generateInviteCode": {
+    "description": "Generate invite code description"
+  },
+
+  "generateCode": "Generate Code",
+  "@generateCode": {
+    "description": "Generate code button text"
+  },
+
+  "inviteCodeGenerated": "Invite Code Generated",
+  "@inviteCodeGenerated": {
+    "description": "Invite code generated dialog title"
+  },
+
+  "shareThisCode": "Share this code with your family member:",
+  "@shareThisCode": {
+    "description": "Share invite code instruction"
+  },
+
+  "codeExpiresInDays": "This code expires in 7 days.",
+  "@codeExpiresInDays": {
+    "description": "Code expiration notice"
+  },
+
+  "copyCode": "Copy Code",
+  "@copyCode": {
+    "description": "Copy code button text"
+  },
+
+  "failedToGenerateInviteCode": "Failed to generate invite code: {error}",
+  "@failedToGenerateInviteCode": {
+    "description": "Failed to generate invite code error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+
+  "passwordSharingDialog": "Password sharing dialog would open here",
+  "@passwordSharingDialog": {
+    "description": "Password sharing dialog placeholder message"
+  },
+
+  "editRole": "Edit Role",
+  "@editRole": {
+    "description": "Edit role menu item"
+  },
+
+  "remove": "Remove",
+  "@remove": {
+    "description": "Remove menu item"
+  },
+
+  "accountId": "Account ID: {id}",
+  "@accountId": {
+    "description": "Account ID label",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+
+  "sharedWithMembers": "Shared with {count} member(s)",
+  "@sharedWithMembers": {
+    "description": "Shared with members count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+
+  "sharedOn": "Shared on {date}",
+  "@sharedOn": {
+    "description": "Shared on date",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+
+  "passwordSharedWithMembers": "Password shared with {count} member(s)",
+  "@passwordSharedWithMembers": {
+    "description": "Password shared activity message",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+
+  "failedToLoadFamilyData": "Failed to load family data: {error}",
+  "@failedToLoadFamilyData": {
+    "description": "Failed to load family data error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  }
+}

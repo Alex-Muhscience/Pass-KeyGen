@@ -3,8 +3,16 @@
 #
 
 list(APPEND FLUTTER_PLUGIN_LIST
+<<<<<<< HEAD
   local_auth_windows
   permission_handler_windows
+=======
+  connectivity_plus
+  flutter_secure_storage_windows
+  local_auth_windows
+  permission_handler_windows
+  share_plus
+>>>>>>> 5e93ef0 (Update Android build configuration and dependencies)
   url_launcher_windows
 )
 

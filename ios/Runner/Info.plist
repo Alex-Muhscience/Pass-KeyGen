@@ -24,6 +24,45 @@
 	<string>$(FLUTTER_BUILD_NUMBER)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+<<<<<<< HEAD
+=======
+	
+	<!-- App Information -->
+	<key>CFBundleDisplayName</key>
+	<string>SecureVault</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.alexkamau.securevault</string>
+	
+	<!-- Privacy Permissions -->
+	<key>NSCameraUsageDescription</key>
+	<string>SecureVault needs camera access to scan QR codes for two-factor authentication setup.</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>SecureVault uses Face ID to securely authenticate and protect your passwords.</string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>SecureVault needs network access to check for password breaches and sync data securely.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>SecureVault needs photo library access to save QR codes and backup files.</string>
+	
+	<!-- Security Settings -->
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<false/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>haveibeenpwned.com</key>
+			<dict>
+				<key>NSExceptionRequiresForwardSecrecy</key>
+				<false/>
+				<key>NSExceptionMinimumTLSVersion</key>
+				<string>TLSv1.2</string>
+			</dict>
+		</dict>
+	</dict>
+	
+>>>>>>> 5e93ef0 (Update Android build configuration and dependencies)
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 name: keygen
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
@@ -27,10 +28,30 @@ environment:
 # dependencies can be manually updated by changing the version numbers below to
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
+=======
+name: pass_keygen
+description: SecureVault - Your ultimate password manager for secure, convenient, and organized digital life.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# App Information
+homepage: https://securevault.app
+repository: https://github.com/alexkamau/securevault
+issue_tracker: https://github.com/alexkamau/securevault/issues
+documentation: https://docs.securevault.app
+
+# Creator Information
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.5.0 <4.0.0'
+
+>>>>>>> 5e93ef0 (Update Android build configuration and dependencies)
 dependencies:
   flutter:
     sdk: flutter
 
+<<<<<<< HEAD
   shared_preferences: ^2.0.11
   sqflite: ^2.3.3+1
   path_provider: ^2.0.11
@@ -48,12 +69,28 @@ dependencies:
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
+=======
+  # Match Flutter’s pinned intl version
+  intl: ^0.20.2
+
+  shared_preferences: ^2.2.2
+  sqflite: ^2.3.3+1
+  path_provider: ^2.1.2
+  encrypt: ^5.0.3
+  local_auth: ^2.2.0
+
+  flutter_launcher_icons: ^0.14.4
+  floor: ^1.4.2
+  floor_common: ^1.4.2
+
+>>>>>>> 5e93ef0 (Update Android build configuration and dependencies)
   cupertino_icons: ^1.0.6
   path: ^1.9.0
   get: ^4.6.6
   get_storage: ^2.1.1
   random_string: ^2.3.1
   crypto: ^3.0.3
+<<<<<<< HEAD
   permission_handler: ^11.3.1
   url_launcher: ^6.3.0
 
@@ -110,3 +147,57 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+=======
+  permission_handler: ^12.0.1
+  url_launcher: ^6.3.0
+
+  # Modern UI enhancements
+  flutter_animate: ^4.5.0
+  gap: ^3.0.1
+  flutter_secure_storage: ^9.2.2
+
+  # Production-grade security
+  pointycastle: ^3.7.3
+  uuid: ^4.2.1
+  qr_flutter: ^4.1.0
+  qr_code_scanner: ^1.0.1
+  otp: ^3.1.4
+  http: ^1.1.2
+  connectivity_plus: ^6.1.5
+  device_info_plus: ^11.5.0
+  package_info_plus: ^8.3.1
+  share_plus: ^11.1.0
+  file_picker: ^10.3.2
+  csv: ^6.0.0
+
+  # State management and architecture
+  riverpod: ^2.4.9
+  flutter_riverpod: ^2.4.9
+  freezed_annotation: ^2.4.1
+  json_annotation: ^4.8.1
+
+  # Internationalization
+  flutter_localizations:
+    sdk: flutter
+
+  # Autofill support
+  flutter_autofill_service: ^0.20.0
+
+  # Onboarding & UI
+  introduction_screen: ^4.0.0
+  flutter_markdown: ^0.7.7+1
+  lottie: ^3.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  floor_generator: ^1.4.2
+  build_runner: ^2.4.7
+  freezed: ^2.4.6
+  json_serializable: ^6.7.1
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  generate: true
+>>>>>>> 5e93ef0 (Update Android build configuration and dependencies)

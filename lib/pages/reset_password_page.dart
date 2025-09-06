@@ -1,15 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+<<<<<<< HEAD
 import 'package:keygen/services/authentication_service.dart';
+=======
+import '../services/authentication_service.dart';
+>>>>>>> 5e93ef0 (Update Android build configuration and dependencies)
 
 class ResetPasswordPage extends StatefulWidget {
   const ResetPasswordPage({super.key});
 
   @override
+<<<<<<< HEAD
   _ResetPasswordPageState createState() => _ResetPasswordPageState();
 }
 
 class _ResetPasswordPageState extends State<ResetPasswordPage> {
+=======
+  ResetPasswordPageState createState() => ResetPasswordPageState();
+}
+
+class ResetPasswordPageState extends State<ResetPasswordPage> {
+>>>>>>> 5e93ef0 (Update Android build configuration and dependencies)
   final _usernameController = TextEditingController();
   final _newPasswordController = TextEditingController();
   final _confirmPasswordController = TextEditingController();

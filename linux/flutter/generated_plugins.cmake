@@ -3,6 +3,10 @@
 #
 
 list(APPEND FLUTTER_PLUGIN_LIST
+<<<<<<< HEAD
+=======
+  flutter_secure_storage_linux
+>>>>>>> 5e93ef0 (Update Android build configuration and dependencies)
   url_launcher_linux
 )
 

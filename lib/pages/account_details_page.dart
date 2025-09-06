@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import '../models/account_model.dart';
+<<<<<<< HEAD
 // import '../models/password_model.dart';
+=======
+import '../models/password_model.dart';
+>>>>>>> 5e93ef0 (Update Android build configuration and dependencies)
 import '../services/database_helper.dart';
 import '../widgets/account_form.dart';
 
@@ -10,10 +14,17 @@ class AccountDetailsPage extends StatefulWidget {
   const AccountDetailsPage({super.key, required this.accountId});
 
   @override
+<<<<<<< HEAD
   _AccountDetailsPageState createState() => _AccountDetailsPageState();
 }
 
 class _AccountDetailsPageState extends State<AccountDetailsPage> {
+=======
+  AccountDetailsPageState createState() => AccountDetailsPageState();
+}
+
+class AccountDetailsPageState extends State<AccountDetailsPage> {
+>>>>>>> 5e93ef0 (Update Android build configuration and dependencies)
   final DatabaseHelper _dbHelper = DatabaseHelper();
   AccountModel? _account;
   List<PasswordModel> _passwords = []; // Changed to List<PasswordModel>
@@ -110,6 +121,11 @@ class _AccountDetailsPageState extends State<AccountDetailsPage> {
               id: initialPasswordModel.id ?? 0,
               accountName: initialPasswordModel.name,
               email: '', // Assuming email isn't used for PasswordModel
+<<<<<<< HEAD
+=======
+              website: '',
+              username: '',
+>>>>>>> 5e93ef0 (Update Android build configuration and dependencies)
               password: initialPasswordModel.password,
               passwords: _passwords, // Pass the passwords list directly
             )
@@ -119,7 +135,11 @@ class _AccountDetailsPageState extends State<AccountDetailsPage> {
               Navigator.pop(
                 context,
                 PasswordModel(
+<<<<<<< HEAD
                   id: accountModel.id,
+=======
+                  accountId: accountModel.id,
+>>>>>>> 5e93ef0 (Update Android build configuration and dependencies)
                   name: accountModel.accountName,
                   password: accountModel.password,
                 ),

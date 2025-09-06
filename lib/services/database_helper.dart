@@ -7,7 +7,11 @@ import 'package:sqflite/sqflite.dart';
 
 import '../models/account_model.dart';
 import '../models/user_model.dart';
+<<<<<<< HEAD
 //import '../models/password_model.dart'; // Import your PasswordModel
+=======
+import '../models/password_model.dart';
+>>>>>>> 5e93ef0 (Update Android build configuration and dependencies)
 
 class DatabaseHelper {
   static final DatabaseHelper _instance = DatabaseHelper._internal();
@@ -54,11 +58,14 @@ class DatabaseHelper {
     return digest.toString();
   }
 
+<<<<<<< HEAD
   // Placeholder function for decrypting passwords
   String _decryptPassword(String encryptedPassword) {
     // Implement your actual decryption logic here
     return encryptedPassword; // Placeholder
   }
+=======
+>>>>>>> 5e93ef0 (Update Android build configuration and dependencies)
 
   // Account Management
   Future<void> insertAccount(AccountModel accountModel) async {
@@ -153,6 +160,14 @@ class DatabaseHelper {
     }
   }
 
+<<<<<<< HEAD
+=======
+  // Alias method for compatibility
+  Future<List<AccountModel>> getAllAccounts() async {
+    return await getAccounts();
+  }
+
+>>>>>>> 5e93ef0 (Update Android build configuration and dependencies)
   // Password Management
   Future<List<PasswordModel>> getPasswordsForAccount(int accountId) async {
     try {

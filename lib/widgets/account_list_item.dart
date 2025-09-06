@@ -17,16 +17,24 @@ class AccountListItem extends StatefulWidget {
   });
 
   @override
+<<<<<<< HEAD
   _AccountListItemState createState() => _AccountListItemState();
 }
 
 class _AccountListItemState extends State<AccountListItem> {
+=======
+  AccountListItemState createState() => AccountListItemState();
+}
+
+class AccountListItemState extends State<AccountListItem> {
+>>>>>>> 5e93ef0 (Update Android build configuration and dependencies)
   bool _isPasswordVisible = false;
   final DatabaseHelper _dbHelper = DatabaseHelper();
 
   Future<void> _editAccount(AccountModel updatedAccountModel) async {
     try {
       await _dbHelper.updateAccount(updatedAccountModel);
+<<<<<<< HEAD
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Account updated successfully')),
       );
@@ -34,12 +42,26 @@ class _AccountListItemState extends State<AccountListItem> {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text('Error updating account: $e')),
       );
+=======
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('Account updated successfully')),
+        );
+      }
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Error updating account: $e')),
+        );
+      }
+>>>>>>> 5e93ef0 (Update Android build configuration and dependencies)
     }
   }
 
   Future<void> _deleteAccount(int accountId) async {
     try {
       await _dbHelper.deleteAccount(accountId);
+<<<<<<< HEAD
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Account deleted successfully')),
       );
@@ -47,6 +69,19 @@ class _AccountListItemState extends State<AccountListItem> {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text('Error deleting account: $e')),
       );
+=======
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('Account deleted successfully')),
+        );
+      }
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Error deleting account: $e')),
+        );
+      }
+>>>>>>> 5e93ef0 (Update Android build configuration and dependencies)
     }
   }
 
@@ -58,7 +93,11 @@ class _AccountListItemState extends State<AccountListItem> {
         content: AccountForm(
           initialAccountModel: widget.accountModel,
           userId: widget.userId,
+<<<<<<< HEAD
           passwords: [], // Placeholder, will be replaced by FutureBuilder
+=======
+          passwords: const [], // Placeholder, will be replaced by FutureBuilder
+>>>>>>> 5e93ef0 (Update Android build configuration and dependencies)
           onSave: (updatedAccountModel) {
             _editAccount(updatedAccountModel);
             Navigator.of(context).pop();
@@ -87,7 +126,11 @@ class _AccountListItemState extends State<AccountListItem> {
           ),
           ElevatedButton(
             onPressed: () {
+<<<<<<< HEAD
               _deleteAccount(widget.accountModel.id!);
+=======
+              _deleteAccount(widget.accountModel.id);
+>>>>>>> 5e93ef0 (Update Android build configuration and dependencies)
               Navigator.of(context).pop();
                         },
             child: const Text('Delete'),

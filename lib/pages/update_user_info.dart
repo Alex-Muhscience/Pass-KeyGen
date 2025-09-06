@@ -2,7 +2,11 @@ import 'dart:convert';
 
 import 'package:crypto/crypto.dart';
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:keygen/services/database_helper.dart';
+=======
+import '../services/database_helper.dart';
+>>>>>>> 5e93ef0 (Update Android build configuration and dependencies)
 
 import '../models/user_model.dart'; // Ensure this path is correct
 
@@ -12,10 +16,17 @@ class UpdateUserInfoPage extends StatefulWidget {
   const UpdateUserInfoPage({super.key, required this.username});
 
   @override
+<<<<<<< HEAD
   _UpdateUserInfoPageState createState() => _UpdateUserInfoPageState();
 }
 
 class _UpdateUserInfoPageState extends State<UpdateUserInfoPage> {
+=======
+  UpdateUserInfoState createState() => UpdateUserInfoState();
+}
+
+class UpdateUserInfoState extends State<UpdateUserInfoPage> {
+>>>>>>> 5e93ef0 (Update Android build configuration and dependencies)
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
   final DatabaseHelper _dbHelper = DatabaseHelper();
@@ -71,7 +82,13 @@ class _UpdateUserInfoPageState extends State<UpdateUserInfoPage> {
 
           await _dbHelper.updateUser(updatedUser);
           _showSnackBar('User updated successfully');
+<<<<<<< HEAD
           Navigator.pop(context);
+=======
+          if (mounted) {
+            Navigator.pop(context);
+          }
+>>>>>>> 5e93ef0 (Update Android build configuration and dependencies)
         } catch (e) {
           _showSnackBar('Error updating user: ${e.toString()}');
         }

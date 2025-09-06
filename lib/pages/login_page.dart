@@ -1,7 +1,14 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:get/get.dart';
 import 'package:keygen/services/authentication_service.dart';
+=======
+import 'package:flutter_animate/flutter_animate.dart';
+import 'package:gap/gap.dart';
+import 'package:get/get.dart';
+import '../services/authentication_service.dart';
+>>>>>>> 5e93ef0 (Update Android build configuration and dependencies)
 import 'package:local_auth/local_auth.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -9,15 +16,25 @@ class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
 
   @override
+<<<<<<< HEAD
   _LoginPageState createState() => _LoginPageState();
 }
 
 class _LoginPageState extends State<LoginPage> {
+=======
+  LoginPageState createState() => LoginPageState();
+}
+
+class LoginPageState extends State<LoginPage> {
+>>>>>>> 5e93ef0 (Update Android build configuration and dependencies)
   final _passwordController = TextEditingController();
   final _usernameController = TextEditingController();
   final AuthenticationService _authService = AuthenticationService(passwords: []);
   final LocalAuthentication _auth = LocalAuthentication();
+<<<<<<< HEAD
   String _username = '';
+=======
+>>>>>>> 5e93ef0 (Update Android build configuration and dependencies)
   bool _obscurePassword = true;
   bool _isAuthenticating = false;
 
@@ -32,7 +49,10 @@ class _LoginPageState extends State<LoginPage> {
       final prefs = await SharedPreferences.getInstance();
       final savedUsername = prefs.getString('username') ?? '';
       setState(() {
+<<<<<<< HEAD
         _username = savedUsername;
+=======
+>>>>>>> 5e93ef0 (Update Android build configuration and dependencies)
         _usernameController.text = savedUsername;
       });
     } catch (e) {
@@ -125,6 +145,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+<<<<<<< HEAD
       appBar: AppBar(
         title: Text('Login - $_username'),
         centerTitle: true,
@@ -222,12 +243,214 @@ class _LoginPageState extends State<LoginPage> {
               ),
             ),
           ],
+=======
+      body: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: [
+              Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
+              Theme.of(context).colorScheme.surface,
+            ],
+          ),
+        ),
+        child: SafeArea(
+          child: SingleChildScrollView(
+            padding: const EdgeInsets.all(24.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: <Widget>[
+                const Gap(60),
+                // App Logo/Icon
+                Container(
+                  height: 120,
+                  width: 120,
+                  decoration: BoxDecoration(
+                    color: Theme.of(context).colorScheme.primary,
+                    borderRadius: BorderRadius.circular(30),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.3),
+                        blurRadius: 20,
+                        offset: const Offset(0, 10),
+                      ),
+                    ],
+                  ),
+                  child: const Icon(
+                    Icons.security,
+                    size: 60,
+                    color: Colors.white,
+                  ),
+                ).animate().fadeIn(duration: 600.ms).scale(delay: 200.ms),
+                const Gap(40),
+                // Welcome Text
+                Column(
+                  children: [
+                    Text(
+                      'Welcome Back',
+                      style: Theme.of(context).textTheme.headlineLarge?.copyWith(
+                        fontWeight: FontWeight.bold,
+                        color: Theme.of(context).colorScheme.onSurface,
+                      ),
+                    ).animate().fadeIn(delay: 400.ms).slideX(begin: -0.3),
+                    const Gap(8),
+                    Text(
+                      'Sign in to access your secure vault',
+                      style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                        color: Theme.of(context).colorScheme.onSurface.withValues(alpha: 0.7),
+                      ),
+                    ).animate().fadeIn(delay: 600.ms).slideX(begin: 0.3),
+                  ],
+                ),
+                const Gap(40),
+                // Login Form
+                Card(
+                  child: Padding(
+                    padding: const EdgeInsets.all(24.0),
+                    child: Column(
+                      children: [
+                        _buildModernTextField(
+                          controller: _usernameController,
+                          label: 'Username',
+                          icon: Icons.person_outline,
+                        ).animate().fadeIn(delay: 800.ms).slideY(begin: 0.3),
+                        const Gap(20),
+                        _buildModernTextField(
+                          controller: _passwordController,
+                          label: 'Password',
+                          icon: Icons.lock_outline,
+                          obscureText: _obscurePassword,
+                          suffixIcon: IconButton(
+                            icon: Icon(
+                              _obscurePassword ? Icons.visibility_outlined : Icons.visibility_off_outlined,
+                            ),
+                            onPressed: () {
+                              setState(() {
+                                _obscurePassword = !_obscurePassword;
+                              });
+                            },
+                          ),
+                        ).animate().fadeIn(delay: 1000.ms).slideY(begin: 0.3),
+                      ],
+                    ),
+                  ),
+                ).animate().fadeIn(delay: 700.ms).scale(begin: const Offset(0.9, 0.9)),
+                const Gap(32),
+                // Login Buttons
+                _isAuthenticating
+                    ? Container(
+                        height: 56,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(12),
+                          color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
+                        ),
+                        child: const Center(
+                          child: CircularProgressIndicator(),
+                        ),
+                      )
+                    : Column(
+                        children: [
+                          FilledButton(
+                            onPressed: _login,
+                            style: FilledButton.styleFrom(
+                              minimumSize: const Size(double.infinity, 56),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                            ),
+                            child: const Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Icon(Icons.login),
+                                Gap(8),
+                                Text(
+                                  'Sign In',
+                                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+                                ),
+                              ],
+                            ),
+                          ).animate().fadeIn(delay: 1200.ms).slideY(begin: 0.3),
+                          const Gap(16),
+                          OutlinedButton(
+                            onPressed: _authenticateWithFingerprint,
+                            style: OutlinedButton.styleFrom(
+                              minimumSize: const Size(double.infinity, 56),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                            ),
+                            child: const Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Icon(Icons.fingerprint),
+                                Gap(8),
+                                Text(
+                                  'Use Biometric',
+                                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+                                ),
+                              ],
+                            ),
+                          ).animate().fadeIn(delay: 1400.ms).slideY(begin: 0.3),
+                        ],
+                      ),
+                const Gap(32),
+                // Action Links
+                Column(
+                  children: [
+                    TextButton(
+                      onPressed: () {
+                        Get.toNamed('/reset_password');
+                      },
+                      child: Text(
+                        'Forgot Password?',
+                        style: TextStyle(
+                          color: Theme.of(context).colorScheme.primary,
+                          fontSize: 16,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                    ).animate().fadeIn(delay: 1600.ms),
+                    const Gap(8),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          'Don\'t have an account? ',
+                          style: TextStyle(
+                            color: Theme.of(context).colorScheme.onSurface.withValues(alpha: 0.7),
+                          ),
+                        ),
+                        TextButton(
+                          onPressed: () {
+                            Get.toNamed('/signup');
+                          },
+                          child: Text(
+                            'Sign Up',
+                            style: TextStyle(
+                              color: Theme.of(context).colorScheme.primary,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ).animate().fadeIn(delay: 1800.ms),
+                  ],
+                ),
+              ],
+            ),
+          ),
+>>>>>>> 5e93ef0 (Update Android build configuration and dependencies)
         ),
       ),
     );
   }
 
+<<<<<<< HEAD
   Widget _buildTextField({
+=======
+  Widget _buildModernTextField({
+>>>>>>> 5e93ef0 (Update Android build configuration and dependencies)
     required TextEditingController controller,
     required String label,
     required IconData icon,
@@ -237,6 +460,7 @@ class _LoginPageState extends State<LoginPage> {
     return TextField(
       controller: controller,
       obscureText: obscureText,
+<<<<<<< HEAD
       decoration: InputDecoration(
         labelText: label,
         border: OutlineInputBorder(
@@ -244,6 +468,21 @@ class _LoginPageState extends State<LoginPage> {
         ),
         prefixIcon: Icon(icon),
         suffixIcon: suffixIcon,
+=======
+      style: const TextStyle(fontSize: 16),
+      decoration: InputDecoration(
+        labelText: label,
+        labelStyle: TextStyle(
+          color: Theme.of(context).colorScheme.onSurface.withValues(alpha: 0.7),
+          fontSize: 16,
+        ),
+        prefixIcon: Icon(
+          icon,
+          color: Theme.of(context).colorScheme.primary,
+        ),
+        suffixIcon: suffixIcon,
+        contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
+>>>>>>> 5e93ef0 (Update Android build configuration and dependencies)
       ),
     );
   }

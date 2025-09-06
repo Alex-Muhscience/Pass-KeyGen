@@ -8,10 +8,17 @@ class PermissionHandlerPage extends StatefulWidget {
   const PermissionHandlerPage({super.key});
 
   @override
+<<<<<<< HEAD
   _PermissionHandlerPageState createState() => _PermissionHandlerPageState();
 }
 
 class _PermissionHandlerPageState extends State<PermissionHandlerPage> {
+=======
+  PermissionHandlerPageState createState() => PermissionHandlerPageState();
+}
+
+class PermissionHandlerPageState extends State<PermissionHandlerPage> {
+>>>>>>> 5e93ef0 (Update Android build configuration and dependencies)
   final LocalAuthentication _auth = LocalAuthentication();
 
   @override
@@ -55,8 +62,14 @@ class _PermissionHandlerPageState extends State<PermissionHandlerPage> {
 
   Future<void> _openAccessibilitySettings() async {
     const url = 'android.settings.ACCESSIBILITY_SETTINGS';
+<<<<<<< HEAD
     if (await canLaunch(url)) {
       await launch(url);
+=======
+    final uri = Uri.parse(url);
+    if (await canLaunchUrl(uri)) {
+      await launchUrl(uri);
+>>>>>>> 5e93ef0 (Update Android build configuration and dependencies)
     } else {
       if (kDebugMode) {
         print('Could not open accessibility settings');

@@ -1,5 +1,9 @@
 import 'package:encrypt/encrypt.dart' as encrypt;
+<<<<<<< HEAD
 import 'package:keygen/services/database_helper.dart';
+=======
+import '/services/database_helper.dart';
+>>>>>>> 5e93ef0 (Update Android build configuration and dependencies)
 
 class EncryptionHelper {
   // Secure key management is important. This example uses a static key for simplicity.

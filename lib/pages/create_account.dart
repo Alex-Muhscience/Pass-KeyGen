@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:random_string/random_string.dart';
 
 import '../models/account_model.dart';
+<<<<<<< HEAD
+=======
+import '../models/password_model.dart';
+>>>>>>> 5e93ef0 (Update Android build configuration and dependencies)
 import '../services/database_helper.dart';
 
 class ManageAccountPage extends StatefulWidget {
@@ -13,10 +17,17 @@ class ManageAccountPage extends StatefulWidget {
   });
 
   @override
+<<<<<<< HEAD
   _ManageAccountPageState createState() => _ManageAccountPageState();
 }
 
 class _ManageAccountPageState extends State<ManageAccountPage> {
+=======
+  ManageAccountPageState createState() => ManageAccountPageState();
+}
+
+class ManageAccountPageState extends State<ManageAccountPage> {
+>>>>>>> 5e93ef0 (Update Android build configuration and dependencies)
   final _formKey = GlobalKey<FormState>();
   final _accountNameController = TextEditingController();
   final _emailController = TextEditingController();
@@ -41,12 +52,23 @@ class _ManageAccountPageState extends State<ManageAccountPage> {
         id: 0, // For a new account
         accountName: _accountNameController.text,
         email: _emailController.text,
+<<<<<<< HEAD
+=======
+        website: '',
+        username: _emailController.text,
+>>>>>>> 5e93ef0 (Update Android build configuration and dependencies)
         password: _passwordController.text,
         passwords: widget.passwords, // Added to ensure passwords are saved
       );
 
       await _dbHelper.insertAccount(newAccount);
+<<<<<<< HEAD
       Navigator.of(context).pop();
+=======
+      if (mounted) {
+        Navigator.of(context).pop();
+      }
+>>>>>>> 5e93ef0 (Update Android build configuration and dependencies)
     }
   }
 
